@@ -1,0 +1,32 @@
+<div class="mb-3 d-flex flex-column gap-3">
+    <div class="card" style="width: 22rem;">
+        <div class="card-body">
+            <div class="text-center">
+                <img src="../../../assets/logo.png" class="img-thumbnail" alt="logo" width="75px">
+            </div>
+            <h5 class="card-title">Exemplo de Estrutura de Repetição - <strong>FOR</strong></h5>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">📅</span>
+                <input type="text" class="form-control" name="dataFormatadaAndConcatenados"
+                    aria-describedby="addon-wrapping" [(ngModel)]="dataFormatadaAndConcatenados" readonly>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 22rem;">
+        <div class="card-body">
+            <div class="text-center">
+                <img src="../../../assets/logo.png" class="img-thumbnail" alt="logo" width="75px">
+            </div>
+            <h5 class="card-title">Exemplo de Estrutura de Repetição - <strong>WHILE</strong></h5>
+            <div class="d-flex flex-column gap-3">
+                <ul id="list">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+                <button class="btn btn-danger" (click)="removerDaLista()">Remover</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="mb-3">
+    <div class="card" style="width: 22rem;">
+        <div class="card-body d-flex flex-column gap-3">
+            <div class="text-center">
+                <img src="../../../assets/logo.png" class="img-thumbnail" alt="logo" width="75px">
+            </div>
+            <h5 class="card-title">Exemplo de Funções em - <strong>TypeScript</strong></h5>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">N° 1</span>
+                <input type="number" class="form-control" name="primeiroNumero" aria-describedby="addon-wrapping"
+                    [(ngModel)]="primeiroNumero">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">N° 2</span>
+                <input type="number" class="form-control" name="segundoNumero" aria-describedby="addon-wrapping"
+                    [(ngModel)]="segundoNumero">
+            </div>
+            <button class="btn btn-primary" (click)="calcular(primeiroNumero, segundoNumero)">Calcular</button>
+            <p class="text-center text-bg-info text-wrap mt-3 mb-3 rounded">Resultado do calculo: <strong>{{resultado}}</strong></p>
+        </div>
+    </div>
+</div>

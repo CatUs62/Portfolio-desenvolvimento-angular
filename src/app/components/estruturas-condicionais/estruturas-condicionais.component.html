@@ -1,0 +1,27 @@
+<div class="container d-flex justify-content-center mt-5 gap-3">
+    <div class="card" style="width: 22rem;">
+        <div class="card-body">
+            <div class="text-center">
+                <img src="../../../assets/logo.png" class="img-thumbnail" alt="logo" width="75px">
+            </div>
+            <div class="text-center {{message === 'Você é maior de idade' ? 'text-bg-success' : message === 'Bem-vindo' ? 'text-bg-success' : 'text-bg-danger'}} 
+                text-wrap mt-3 mb-3 rounded">
+                {{message}}
+            </div>
+            <form (ngSubmit)="verificarIdade()" class="form">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Idade</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1" [(ngModel)]="idade" name="idade">
+                </div>
+                <select class="form-select form-select-lg mb-3" aria-label="Large select example"
+                    [(ngModel)]="mesSelecionado" (change)="verificarMes()" name="mesSelecionado">
+                    <option *ngFor="let mes of mesesEnumValues" [value]="mes.value">{{ mes.label }}</option>
+                </select>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <app-estruturas-repeticao></app-estruturas-repeticao>
+    <app-funcoes-typescript></app-funcoes-typescript>
+</div>

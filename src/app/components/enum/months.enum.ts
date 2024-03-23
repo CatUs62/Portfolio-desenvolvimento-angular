@@ -1,0 +1,31 @@
+export enum Months {
+    SELECIONE = "Selecione",
+    JANEIRO = "Janeiro",
+    FEVEREIRO = "Fevereiro",
+    MARCO = "Março",
+    ABRIL = "Abril",
+    MAIO = "Maio",
+    JUNHO = "Junho",
+    JULHO = "Julho",
+    AGOSTO = "Agosto",
+    SETEMBRO = "Setembro",
+    OUTUBRO = "Outubro",
+    NOVEMBRO = "Novembro",
+    DEZEMBRO = "Dezembro",
+}
+
+export const MonthsList = [
+    { value: Months.SELECIONE, label: "Selecione" },
+    { value: Months.JANEIRO, label: "Janeiro" },
+    { value: Months.FEVEREIRO, label: "Fevereiro" },
+    { value: Months.MARCO, label: "Março" },
+    { value: Months.ABRIL, label: "Abril" },
+    { value: Months.MAIO, label: "Maio" },
+    { value: Months.JUNHO, label: "Junho" },
+    { value: Months.JULHO, label: "Julho" },
+    { value: Months.AGOSTO, label: "Agosto" },
+    { value: Months.SETEMBRO, label: "Setembro" },
+    { value: Months.OUTUBRO, label: "Outubro" },
+    { value: Months.NOVEMBRO, label: "Novembro" },
+    { value: Months.DEZEMBRO, label: "Dezembro" },
+];
